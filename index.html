@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="icon">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+      <div class="panel">
+        <div id="home-icon" class="icon-container">
+          <i class="fa-solid fa-house fa-2x" onclick="showContent('home')"></i>
+          <div class="component" onclick="showContent('home')">Home</div>
+        </div>
+        <div id= "contact-icon" class="icon-container">
+          <i class="fa-solid fa-address-book fa-2x" onclick="showContent('contact')"></i>
+          <div class="component " onclick="showContent('contact')">Contact</div>
+        </div>
+        <div  id= "information-icon" class="icon-container">
+          <i class="fa-solid fa-circle-info fa-2x" onclick="showContent('information')"></i>
+          <div class="component " onclick="showContent('information')">Information</div>
+        </div>
+        <div id="guide-icon" class="icon-container">
+          <i class="fa-solid fa-pen-nib fa-2x" onclick="showContent('guide')"></i>
+          <div class="component " onclick="showContent('guide')">Guide</div>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="home-content" class="hidden">
+          <h1>Welcome to the Home Page!</h1>
+          <p>This is the content for the Home page.</p>
+        </div>
+        <div id="contact-content" class="hidden">
+          <h1>Contact Information</h1>
+          <p>Here you can find our contact details.</p>
+        </div>
+        <div id="information-content" class="hidden">
+          <h1>Information</h1>
+          <p>This is some general information.</p>
+        </div>
+        <div id="guide-content" class="hidden">
+          <h1>Guide</h1>
+          <p>This is a guide on how to use our website.</p>
+        </div>
+      </div>
+
+    </div> 
+      
+        <script src="./app.js"></script>
+</body>
+</html>

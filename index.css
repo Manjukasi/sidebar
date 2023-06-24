@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("./background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500vh;
+  }
+
+  .container{
+    display: flex;
+   }  
+
+ .icon {
+    padding: 30px;
+ }
+ .panel {
+  width: 20%;
+ }
+ .icon :hover {
+  cursor: pointer;
+  color: white;
+ }
+
+ .icon-container :hover{
+  cursor: pointer;
+  font-size: 2em;
+ }
+
+ .icon-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 5px 10px 0;
+  margin: 20px;
+ }
+
+
+ .icon-container i {
+  margin-right: 15px;
+}
+
+ .component {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+  #content { 
+    padding: 20px;
+    margin-left: 150px;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    color: white;
+  }
+
+@media screen and (max-width: 767px) {
+  .component{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-container {
+    display: flex;
+  }
+}
